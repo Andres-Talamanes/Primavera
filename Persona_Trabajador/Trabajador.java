@@ -27,4 +27,31 @@ public class Trabajador extends Persona{
         "\nPuesto: " + puesto);
     }
     
+    // getter y setter de ID
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int iD) {
+        ID = iD;
+    }
+
+    // getter y setter de Sueldo
+    public double getSueldo() {
+        return sueldo;
+    }
+
+    public void setSueldo(double sueldo) {
+        this.sueldo = sueldo;
+    }
+
+    // getter y setter de Puesto
+    public String getPuesto() {
+        return puesto;
+    }
+
+    public void setPuesto(String puesto) {
+        this.puesto = puesto;
+    }
+    
 }
