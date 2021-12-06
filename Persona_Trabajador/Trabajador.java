@@ -26,7 +26,7 @@ public class Trabajador extends Persona{
         "\nSueldo: " + sueldo +
         "\nPuesto: " + puesto);
     }
-    
+
     // getter y setter de ID
     public int getID() {
         return ID;
@@ -53,5 +53,8 @@ public class Trabajador extends Persona{
     public void setPuesto(String puesto) {
         this.puesto = puesto;
     }
+
+    
+    
     
 }
