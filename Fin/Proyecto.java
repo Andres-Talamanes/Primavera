@@ -1,7 +1,8 @@
 package Fin;
 
-public class Proyecto;{
-
-System.out.println("Hola guapos");
-
+public class Proyecto{
+    public static void main(String[] args) {
+        System.out.println("Hola guapos");
+        System.out.println("Este es mi comentario modificado. Brandon :)");
+    }
 }
