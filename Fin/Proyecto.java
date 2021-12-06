@@ -2,6 +2,6 @@ package Fin;
 
 public class Proyecto;{
 
-system.out.println("Hola guapos");
+System.out.println("Hola guapos");
 
 }
