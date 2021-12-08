@@ -16,14 +16,14 @@ public static void main(String[] args) throws Exception {
 Pila pila = new Pila();
 ArbolBinario arbol;
 Nodo a1, a2,a;
-a1 = ArbolBinario.nuevoArbol(null, 7, null);
-a2 = ArbolBinario.nuevoArbol(a1, 8, null);
+a1 = ArbolBinario.nuevoArbol(null, "" , null);
+a2 = ArbolBinario.nuevoArbol(a1, "" , null);
 pila.push(a2);
 
-a1 = ArbolBinario.nuevoArbol(null, 14, null);
-a = ArbolBinario.nuevoArbol(a1, 16, null);
+a1 = ArbolBinario.nuevoArbol(null, "" , null);
+a = ArbolBinario.nuevoArbol(a1,"" , null);
 pila.push(a);
-a = ArbolBinario.nuevoArbol(a2, 12, a);
+a = ArbolBinario.nuevoArbol(a2, "", a);
 arbol = new ArbolBinario(a);
 System.out.println("Arbol creado...");
 
