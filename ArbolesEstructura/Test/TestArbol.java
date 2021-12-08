@@ -24,8 +24,8 @@ a1 = ArbolBinario.nuevoArbol(null, "" , null);
 a = ArbolBinario.nuevoArbol(a1,"" , null);
 pila.push(a);
 a = ArbolBinario.nuevoArbol(a2, "", a);
-arbol = new ArbolBinario(a);
-System.out.println("Arbol creado...");
+arbol = new ArbolBinario();
+System.out.println("Arbol creado..."); 
 
 
 arbol = new ArbolBinario(new Nodo(new Nodo(new Nodo (null, 1, new Nodo(null, 3, null)), 4,null),5, new Nodo(new Nodo(null,6,null),7,new Nodo(new Nodo(null, 8, null),9,new Nodo(null, 10,null)))));
