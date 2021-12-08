@@ -22,9 +22,8 @@ public class Proyecto{
             System.out.println("|   1. Dar de alta a un empleado                              |");
             System.out.println("|   2. Dar de baja a un empleado                              |");
             System.out.println("|   3. Consulta de todos los empleados                        |");
-            System.out.println("|   4. Consulta de los empleados por orden de ID              |");
-            System.out.println("|   5. Modificar datos de un empleado                         |");
-            System.out.println("|   6. Salir                                                  |");
+            System.out.println("|   4. Modificar datos de un empleado                         |");
+            System.out.println("|   5. Salir                                                  |");
             System.out.println("|-------------------------------------------------------------|\n");
     
             System.out.print("\nEscoja una opción: ");  
@@ -104,11 +103,6 @@ public class Proyecto{
                 break;
 
                 case 4:
-                    System.out.print("\n--------- CONSULTA DE LOS EMPLEADOS POR ORDEN DE ID -----------\n");
-                                       
-                break;
-
-                case 5:
                     System.out.print("\n--------------- MODIFICAR DATOS DE UN EMPLEADO ----------------\n");
                     System.out.println(" ");
                     System.out.print("Inserta el ID del trabajador que quieres Modificar: ");
@@ -151,7 +145,7 @@ public class Proyecto{
                                    
                 break;
     
-                case 6:
+                case 5:
                     System.out.print("\n---------------------------- SALIR ----------------------------\n");
                     System.out.println("\nEl programa ha finalizado ...\n");
                 break;
@@ -160,6 +154,6 @@ public class Proyecto{
                 System.out.println("\nEsa opción no está disponible.");
             }
         }
-        while(opcion != 6);
+        while(opcion != 5);
     }
 }
