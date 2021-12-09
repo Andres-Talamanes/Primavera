@@ -7,11 +7,14 @@ import java.util.Scanner;
 import ArbolesEstructura.arbolbinario.ArbolBinario;
 
 public class Proyecto{
-    public static void main(String[] args) {
+    public static void main(String[] args){
         int opcion;
+
+        
 
         ArrayList<Trabajador> trabajador = new ArrayList<Trabajador>();
         Random rd = new Random();
+        Arbol arbolito = new Arbol();
         
         
 
@@ -151,11 +154,17 @@ public class Proyecto{
                 case 5:
                     System.out.print("\n--------------------- EMPLEADOS ORDENADOS POR ID ---------------------\n");
                     
-                    for(Trabajador t2: trabajador)
+                    arbolito.inOrden(null);
+                    if(!arbolito.esVacio())
                     {
-                        
-
+                        System.out.println("Recorrido en IN-ORDEN\n");
+                        arbolito.inOrden(arbolito.getRaiz());
                     }
+                    else
+                    {
+                        System.out.println("El arbol está vacío.\n");
+                    }
+
                 break;
 
                 case 6:
@@ -169,4 +178,5 @@ public class Proyecto{
         }
         while(opcion != 6);
     }
+}
 }
