@@ -1,3 +1,4 @@
+package proyecto;
 public class Arbol {
 
     private Trabajador raiz;

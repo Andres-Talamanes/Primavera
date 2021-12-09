@@ -1,4 +1,4 @@
-package proyecto; 
+ package proyecto;
 import ArbolesEstructura.arbolbinario.ArbolBinario;
 
 public class Trabajador extends Persona{

@@ -1,6 +1,5 @@
 package proyecto;
 
-
 public class Persona {
     
     private String nombre;
