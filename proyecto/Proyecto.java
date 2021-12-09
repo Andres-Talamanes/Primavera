@@ -4,12 +4,9 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Random;
 import java.util.Scanner;
-
 import javax.sound.sampled.SourceDataLine;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-
 import ArbolesEstructura.arbolbinario.ArbolBinario;
 import ArbolesEstructura.arbolbinario.Nodo;
 import ArbolesEstructura.pilagenerica.Pila;
