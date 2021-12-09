@@ -26,7 +26,6 @@ public class Proyecto{
         Arbol arbolito = new Arbol();
         
         
-
         do
         {
             System.out.print("\n");
