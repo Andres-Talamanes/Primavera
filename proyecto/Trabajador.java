@@ -3,9 +3,11 @@ import ArbolesEstructura.arbolbinario.ArbolBinario;
 
 public class Trabajador extends Persona{
 
-    private int ID;
+    public int ID;
     private double sueldo;
     private String puesto;
+    public Trabajador hijoizquierdo;
+    public Trabajador hijoderecho;
 
 
     //Constructor de Trabajador
@@ -14,7 +16,9 @@ public class Trabajador extends Persona{
         super(nombre, apellido_paterno, apellido_materno, edad, genero);
         this.ID = ID;
         this.sueldo=sueldo;
-        this.puesto=puesto; 
+        this.puesto=puesto;
+        this.hijoderecho=null;
+        this.hijoizquierdo=null; 
     }
 
     public void mostrarDatos()
@@ -55,8 +59,31 @@ public class Trabajador extends Persona{
     public void setPuesto(String puesto) {
         this.puesto = puesto;
     }
-
     
+    //-------------------------------
+    public void Trabajador()
+    {
+        Trabajador ID = new Trabajador(getNombre(), getApellido_paterno(), 
+        getApellido_materno(), getEdad(), getGenero(), getID(), getSueldo(), getPuesto());
+    }
+
+    //Saber si esta vacio
+    public boolean esVacio()
+    {
+        this.ID = 0;
+        return false;
+    }
+
+    //Recorrer arbol InOrden
+    public void inOrden(Trabajador ID)
+    {
+        if(ID!=ID)
+        {
+            inOrden(ID.hijoizquierdo);
+            System.out.print(ID.ID + "\t");
+            inOrden(ID.hijoderecho);
+        }
+    }
     
     
 }
