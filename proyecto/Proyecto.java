@@ -47,6 +47,7 @@ public class Proyecto{
 
             switch(opcion)
             {
+                
                 case 1: 
                     System.out.print("\n--------------- DAR DE ALTA A UN EMPLEADO ---------------------\n");
                     System.out.print("\nInserta el nombre del Trabajador: ");
@@ -78,8 +79,10 @@ public class Proyecto{
                     t.setSueldo(sueldo);
                     t.setPuesto(puesto);
                     trabajador.add(t);
-                break;
 
+                    
+                break;
+                
                 case 2:
                     System.out.print("\n--------------- DAR DE BAJA A UN EMPLEADO ---------------------\n");
                     System.out.println(" ");
