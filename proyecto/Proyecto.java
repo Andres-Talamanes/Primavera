@@ -12,6 +12,8 @@ public class Proyecto{
 
         ArrayList<Trabajador> trabajador = new ArrayList<Trabajador>();
         Random rd = new Random();
+        
+        
 
         do
         {
@@ -23,7 +25,8 @@ public class Proyecto{
             System.out.println("|   2. Dar de baja a un empleado                              |");
             System.out.println("|   3. Consulta de todos los empleados                        |");
             System.out.println("|   4. Modificar datos de un empleado                         |");
-            System.out.println("|   5. Salir                                                  |");
+            System.out.println("|   5. Empleados ordenados en inOrden                         |");
+            System.out.println("|   6. Salir                                                  |");
             System.out.println("|-------------------------------------------------------------|\n");
     
             System.out.print("\nEscoja una opción: ");  
@@ -146,6 +149,16 @@ public class Proyecto{
                 break;
     
                 case 5:
+                    System.out.print("\n--------------------- EMPLEADOS ORDENADOS POR ID ---------------------\n");
+                    
+                    for(Trabajador t2: trabajador)
+                    {
+                        
+
+                    }
+                break;
+
+                case 6:
                     System.out.print("\n---------------------------- SALIR ----------------------------\n");
                     System.out.println("\nEl programa ha finalizado ...\n");
                 break;
@@ -154,6 +167,6 @@ public class Proyecto{
                 System.out.println("\nEsa opción no está disponible.");
             }
         }
-        while(opcion != 5);
+        while(opcion != 6);
     }
 }
