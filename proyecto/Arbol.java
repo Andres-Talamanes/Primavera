@@ -25,6 +25,7 @@ public class Arbol {
         return raiz==null;
     }
 
+    
     //Recorrer arbol InOrden
     public void inOrden(Trabajador r)
     {

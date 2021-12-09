@@ -7,8 +7,15 @@ import java.util.Scanner;
 
 import javax.sound.sampled.SourceDataLine;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 import ArbolesEstructura.arbolbinario.ArbolBinario;
+import ArbolesEstructura.arbolbinario.Nodo;
+import ArbolesEstructura.pilagenerica.Pila;
 public class Proyecto{
+    BufferedReader br = new BufferedReader(
+        new InputStreamReader(System.in));
     public static void main(String[] args){
         int opcion;
 
@@ -179,6 +186,8 @@ public class Proyecto{
             }
         }
         while(opcion != 6);
+        ArbolBinario arbol;
+        
     }
 }
 
