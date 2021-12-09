@@ -187,7 +187,8 @@ public class Proyecto{
         }
         while(opcion != 6);
         ArbolBinario arbol;
-        
+        arbol = new ArbolBinario();
+        System.out.println("Arbol creado...");
     }
 }
 
