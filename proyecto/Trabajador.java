@@ -6,8 +6,8 @@ public class Trabajador extends Persona{
     public int ID;
     private double sueldo;
     private String puesto;
-    public Trabajador hijoizquierdo;
-    public Trabajador hijoderecho;
+    private Trabajador izquierdo;
+    private Trabajador derecho;
 
 
     //Constructor de Trabajador
@@ -17,9 +17,11 @@ public class Trabajador extends Persona{
         this.ID = ID;
         this.sueldo=sueldo;
         this.puesto=puesto;
-        this.hijoderecho=null;
-        this.hijoizquierdo=null; 
+        this.derecho=null;
+        this.izquierdo=null; 
     }
+
+
 
     public void mostrarDatos()
     {
@@ -59,31 +61,24 @@ public class Trabajador extends Persona{
     public void setPuesto(String puesto) {
         this.puesto = puesto;
     }
+    //Getter y Setter de izquierdo
+    public Trabajador getIzquierdo() {
+        return izquierdo;
+    }
     
-    //-------------------------------
-    public void Trabajador()
-    {
-        Trabajador ID = new Trabajador(getNombre(), getApellido_paterno(), 
-        getApellido_materno(), getEdad(), getGenero(), getID(), getSueldo(), getPuesto());
+    public void setIzquierdo(Trabajador izquierdo) {
+        this.izquierdo = izquierdo;
+    }
+    //Getter y Setter de derecho
+    public Trabajador getDerecho() {
+        return derecho;
     }
 
-    //Saber si esta vacio
-    public boolean esVacio()
-    {
-        this.ID = 0;
-        return false;
+    public void setDerecho(Trabajador derecho) {
+        this.derecho = derecho;
     }
 
-    //Recorrer arbol InOrden
-    public void inOrden(Trabajador ID)
-    {
-        if(ID!=ID)
-        {
-            inOrden(ID.hijoizquierdo);
-            System.out.print(ID.ID + "\t");
-            inOrden(ID.hijoderecho);
-        }
-    }
+    
     
     
 }
